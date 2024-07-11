@@ -1,5 +1,7 @@
  #!/bin/bash
 
+ figlet KIA
+
  FILE=~/tmp/_SUDDEN
  
  while true
