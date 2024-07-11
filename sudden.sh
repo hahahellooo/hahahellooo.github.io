@@ -4,7 +4,7 @@
  
  while true
  do
-    if [ -e "$FILE" ]; then
+    if [[ -f "$FILE" ]]; then
 	    echo "SUDDEN!!!"
     else 
 	    clear
