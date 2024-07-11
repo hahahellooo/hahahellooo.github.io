@@ -1,17 +1,18 @@
- #!/bin/bash
+#!/bin/bash
 
- FILE=~/tmp/_SUDDEN
- DATE=$(date +"%Y%m%d %H:%M:%S")
- while true
- do
-    if [[ -f "$FILE" ]]; then
-	    echo "SUDDEN!!!"
-    else 
+FILE=~/tmp/_SUDDEN
+# DATE=$(date +"%Y%m%d %H:%M:%S")
+
+while true
+do	
+        DATE=$(date +"%Y%m%d %H:%M:%S")
+	if [[ -f "$FILE" ]]; then
+	    #echo "check $FILE"
+	    echo "$DATE,SUDDEN!!!"
+	else
 	    clear
 	    figlet KIA
-	    date
-    	    
-    fi
-    sleep 3
- done
-
+	    echo $DATE
+	fi
+	sleep 3
+done
