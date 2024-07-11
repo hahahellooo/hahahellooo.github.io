@@ -4,6 +4,12 @@
  
  while true
  do
-    echo "check"
+    if  [[ -f "$FILE" ]]; then
+	    echo "SUDDEN!!!"
+    else 
+	    clear
+	    date
+    	    
+    fi
     sleep 3
  done
