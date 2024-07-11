@@ -1,7 +1,5 @@
  #!/bin/bash
 
- figlet KIA
-
  FILE=~/tmp/_SUDDEN
  
  while true
@@ -10,6 +8,7 @@
 	    echo "SUDDEN!!!"
     else 
 	    clear
+	    figlet KIA
 	    date
     	    
     fi
